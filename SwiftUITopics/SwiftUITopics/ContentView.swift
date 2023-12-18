@@ -12,7 +12,6 @@ struct ContentView: View {
     @State var brianaIsAnOlyLifter = ["BigMountainBarbell","ChristmasBarbell", "Covid, workouts", "HeavyWeights","Kettlebell", "LightWeight", "MAX","OLY", "Oly Shoes","Queen","Solid", "SwimBabe", "YOUGotThis"].shuffled()
     // give me a random number
     @State var correctPicture = Int.random(in: 0...2)
-    
     @State private var showingSore = false
     @State private var scoreTitle = ""
     var body: some View {
@@ -21,7 +20,6 @@ struct ContentView: View {
                 .ignoresSafeArea()
             VStack(spacing: 5.0) {
                 VStack {
-            
                     Text("Tap the correct weightlifting picture <3")
                         .foregroundStyle(.white)
                         .font(.subheadline.weight(.heavy))
@@ -51,6 +49,7 @@ struct ContentView: View {
                     .foregroundStyle(.pink)
                     .font(.title.bold())
             Spacer()
+                
             }
             .padding()
             
@@ -71,6 +70,7 @@ struct ContentView: View {
         
         showingSore = true
     }
+    
     func askQuestion() {
         brianaIsAnOlyLifter.shuffled()
         correctPicture = Int.random(in: 0...2)
