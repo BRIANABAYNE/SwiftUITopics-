@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "8CBD92E3-BB55-4A6E-93BC-9236BDAB531C.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "compression-type" : "gpu-optimized-smallest",
+    "preserves-vector-representation" : true
+  }
+}
